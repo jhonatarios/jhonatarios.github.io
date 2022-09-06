@@ -87,7 +87,7 @@ nav{
     display: flex;
     justify-content: center;
     line-height: 8vh;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 nav ul > li{
@@ -209,20 +209,19 @@ nav ul > li a:hover, nav ul > li a:active{
     filter: grayscale(0);
 }
 
-#project-1{
-    background-image: url(../img/jojo.jpg);
+.project a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-#project-2{
-    background-image: url(../img/jojo.jpg);
+.project a:hover, .project a:active{
+    color: var(--primary);
 }
 
-#project-3{
-    background-image: url(../img/jojo.jpg);
-}
-
-#project-4{
-    background-image: url(../img/jojo.jpg);
+.icons{
+    color: var(--primary);
+    font-size: 8vw;
 }
 
 /* My Skills section */
@@ -235,6 +234,7 @@ nav ul > li a:hover, nav ul > li a:active{
     row-gap: 1em;
     column-gap: 1em;
     grid-template-columns: 20vw 20vw;
+    padding-bottom: 2em;
 }
 
 #my-skills h2{
@@ -250,6 +250,7 @@ nav ul > li a:hover, nav ul > li a:active{
 
 #my-skills .skill{
     text-align: center;
+    font-size: .8em;
 }
 
 #my-skills .skill h3{
@@ -261,5 +262,56 @@ nav ul > li a:hover, nav ul > li a:active{
     color: var(--text-color);
 }
 
+/* Footer */
+footer{
+    background-color: #222;
+    width: 100vw;
+    text-align: center;
+    padding: 2em;
+    color: #ccc;
+}
+
+footer a{
+    color: var(--primary);
+    text-decoration: none;
+}
 
 
+/* Tablet & Mobile */
+
+@media (max-width: 960px) {
+    /* About Me */
+    #about-me .img{
+        display: none;
+    }
+
+    /* Projects */
+    .projects{
+        display: grid;
+        padding: 4em;
+        width: 80%;
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+    }
+    
+    .project{
+        max-width: 100%;
+        font-size: .8em;
+    }
+    
+    .project .project-img{
+        width: 40vw;
+        height: 40vw;
+        filter: none;
+    }
+    .project .project-img:hover{
+        filter: none;
+    }
+    .icons{
+        color: var(--primary);
+        font-size: 10vw;
+    }
+    .skill p{
+        display: none;
+    }
+}
