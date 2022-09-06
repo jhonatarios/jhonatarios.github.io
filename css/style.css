@@ -1,0 +1,265 @@
+/* Global Settings */
+:root {
+    --primary: rgb(105,113,198);
+    --secundary: rgb(37,22,30);
+    --text-color: #fff;
+    --text-secundary: rgb(193,158,152);
+    --text-tertiary: rgb(70,38,107);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+body{
+    background-color: var(--secundary);
+}
+
+html{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes moving {
+    0% {
+        margin-top: 0vw;
+    }
+    50% {
+        margin-top: 5vh;
+    }
+    100% {
+        margin-top: 0vw;
+    }
+}
+
+/* Back to top */
+
+.back {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 2.5em;
+    height: 2.5em;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.back::after {
+    content: "↑";
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: margin-top 200ms;
+    
+}
+
+.back:hover::after {
+    margin-top: .4em;
+}
+
+.back:hover{
+    opacity: 1;
+}
+
+/* Header */
+/* Navbar */
+nav{
+    background-color: rgb(0, 0, 0, .5);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    line-height: 8vh;
+    font-size: 1.2em;
+}
+
+nav ul > li{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 1em;
+}
+
+nav ul > li a:link, nav ul > li a:visited{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav ul > li a:hover, nav ul > li a:active{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+
+/* About me */
+#about-me{
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), 
+    url("../img/jojo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+    padding: 20vw;
+}
+
+#about-me .img{
+    background-image: url(../img/jojo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    width: 20vw;
+    height: 20vw;
+    transform: skew(-10deg);
+    animation: moving 3s ease-in-out infinite;
+}
+
+#about-me-info .name{
+    color: var(--text-secundary);
+    font-size: 2.5em;
+    
+}
+
+#about-me-info .name::after{
+    content: '|';
+    margin-left: .2em;
+    opacity: 1;
+    animation: blink .8s infinite;
+}
+
+.about-me-text .links{
+    font-size: 1em;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 1em;
+    position: absolute;
+    margin-top: 1.2em;
+}
+
+.about-me-text .link{
+    background-color: var(--primary);
+    padding: .4em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.about-me-text .link:hover{
+    background-color: var(--text-secundary);
+    color: var(--text-color);
+}
+
+/* Projects */
+#projects h2{
+    text-align: center;
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 2.2em;
+    color: var(--text-color);
+}
+
+.projects{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-color );
+    font-size: .8em;
+}
+
+.project .project-img{
+    width: 15vw;
+    height: 15vw;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+    filter: grayscale(100);
+}
+
+.project .project-img:hover{
+    filter: grayscale(0);
+}
+
+#project-1{
+    background-image: url(../img/jojo.jpg);
+}
+
+#project-2{
+    background-image: url(../img/jojo.jpg);
+}
+
+#project-3{
+    background-image: url(../img/jojo.jpg);
+}
+
+#project-4{
+    background-image: url(../img/jojo.jpg);
+}
+
+/* My Skills section */
+#my-skills .my-skills{
+    padding-top: 2em;
+    justify-content: center;
+    background-color: var(--text-tertiary);
+    width: 100vw;
+    display: grid;
+    row-gap: 1em;
+    column-gap: 1em;
+    grid-template-columns: 20vw 20vw;
+}
+
+#my-skills h2{
+    background-color: var(--text-tertiary);
+    width: 100vw;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 2.2em;
+    color: var(--text-color);
+}
+
+#my-skills .skill{
+    text-align: center;
+}
+
+#my-skills .skill h3{
+    color: var(--text-color);
+}
+
+#my-skills .skill p{
+    padding: .2em;
+    color: var(--text-color);
+}
+
+
+
