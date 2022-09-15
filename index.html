@@ -4,125 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhonata Rios | Portfólio</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <!-- Scripts -->
-    <script src="js/scripts.js" defer></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
+    <title>Jhonata Rios</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js" defer></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <header>
-        <nav>
+    <div id="wrapper">
+        <div class="main-box">
+            <div class="rgb-line"></div>
+            <div class="about">
+                <span class="name">Jhonata Rios</span>
+                <p>Front end web developer</p>
+            </div>
             <ul>
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#about-me">Sobre mim</a>
-                </li>
-                <li>
-                    <a href="#projects">Projetos</a>
-                </li>
-                <li>
-                    <a href="#my-skills">Habilidades</a>
-                </li>
+                <li>Focus.</li>
+                <li>Discipline.</li>
+                <li>Consistency.</li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="about-me">
-        <div class="img"></div>
-        <div id="about-me-info">
-            <div class="about-me-text">
-                <h2>Olá, eu sou o <br>
-                <span class="name">Jhonata Rios</span><br>
-                Desenvolvedor web front-end</h2>
-                <h3 class="links">
-                    <a href="https://www.linkedin.com/in/jhonatarios/" class="link" target="_blank">
-                        <iconify-icon icon="feather:linkedin"></iconify-icon>
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/jhonatarios" class="link" target="_blank">
-                        <iconify-icon icon="akar-icons:github-fill"></iconify-icon>
-                        GitHub
-                    </a>
-                </h3>
+    
+            <div class="menu">
+                    <div id="home-click">
+                        <a href="#">Home</a>
+                    </div>
+    
+                    <div id="about-click">
+                        <a href="#">About me</a>
+                    </div>
+                    
+                    <div id="projects-click">
+                        <a href="#">Projects</a>
+                    </div>
+    
+                    <div id="contact-click">
+                        <a href="#">Contact</a>
+                    </div>
             </div>
         </div>
-    </section>
-
-    <section id="projects">
-        <h2>Meus últimos projetos</h2>
-        <div class="projects">
-
-            <div class="project">
-                <div class="project-img" style="background-image: url('./img/pokedex.png')"></div>
-                    <p>Pokédex seguindo o curso do Manual do Dev, com algumas implementaçõs feitas.
-                        Utilizei HTML, CSS e JavaScript para realizar o projeto. <br><br>
-                        <a href="https://jhonatarios.github.io/pokedex/" target="_blank">Testar aplicação</a> | <a href="https://github.com/jhonatarios/pokedex" target="_blank">Repositorio no GitHub</a>
-                    </p>
+        
+        <main id="content">
+            <div id="about-me" class="hide">
+                <p>👨🏻‍💻   Eu tive meu primeiro contato com linhas de código aos 7 anos de idade, já 
+                    desde novo era apaixonado por animes e queria fazer um site de animes. Ao longo 
+                    dos anos fui aprendendo realmente como que era e junto com alguns outros amigos 
+                    fomos responsaveis por fazer o design de varios sites de anime que ficaram famosos 
+                    na epoca, e são conhecidos até hoje por muitos. Infelizmente no meio desse caminho, 
+                    parando e voltando as linhas de codigo para tentar outras oportunidades, hoje estou 
+                    focado e determinado em trilhar essa carreira.</p>
+                <p>💚   Tive experiência como criador de conteúdo durante alguns períodos, também passei 
+                    cerca de 3 anos como engenheiro de áudio, são experiências que agregam muito ao meu 
+                    conhecimento geral, podendo auxiliar em alguns determinados projetos.</p>
+                <p>🚀   Atualmente, tenho como foco principal da minha carreira é desenvolvimento web 
+                    front end. Utilizo JavaScript (React) para desenvolver atualmente.</p>
+                <p>🏎   Sou apaixonado por automobilismo, especialmente por Drift, costumava correr em 
+                    montanhas com amigos no simulador.</p>
+                <p>(◕‿◕)   Como já deu para perceber no inicio, sou bastante apaixonado por anime 
+                    também...</p>
+                    <br> 
+                    <a href="#" id="about-me-hide" class="btn-hide">Hide</a>
             </div>
+    
+            <div id="projects" class="hide">
+                <div class="container">
+                    <a href="https://jhonatarios.github.io/pokedex/" target="_blank">
+                        <img src="./img/sq_gengar.jpg" alt="Pokedex">
+                    </a>
 
-            <div class="project">
-                <div class="project-img" style="background-image: url('./img/lol-login-screen.png')"></div>
-                    <p>Tela de login do League of Legends seguindo o curso do Manual do Dev, 
-                        com algumas implementaçõs feitas. Utilizei HTML, CSS e um pouco de JavaScript
-                        para realizar o projeto. <br><br>
-                        <a href="https://jhonatarios.github.io/lol-login-screen" target="_blank">Testar aplicação</a> | <a href="https://github.com/jhonatarios/lol-login-screen" target="_blank">Repositorio no GitHub</a>
-                    </p>
+                    <a href="https://jhonatarios.github.io/lol-login-screen/" target="_blank">
+                        <img src="./img/sq_rengar.png" alt="LoL Login Screen">
+                    </a>
+
+                    <a href="https://jhonatarios.github.io/mariojump/" target="_blank">
+                        <img src="./img/sq_mario.jpg" alt="Mario Jump">
+                    </a>
+                </div>
+                <br>
+                <a href="#" id="projects-hide" class="btn-hide">Hide</a>
             </div>
-
-            <div class="project">
-                <div class="project-img" style="background-image: url('./img/mariojump.png')"></div>
-                    <p>Jogo Mario Jump seguindo o curso do Manual do Dev. Utilizei HTML, CSS e JavaScript
-                        para realizar o projeto. <br><br>
-                        <a href="https://jhonatarios.github.io/mariojump" target="_blank">Testar aplicação</a> | <a href="https://github.com/jhonatarios/mariojump" target="_blank">Repositorio no GitHub</a>
-                    </p>
+    
+            <div id="contact" class="hide">
+                <div class="container">
+                    <a href="https://github.com/jhonatarios" target="_blank">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jhonatarios/" target="_blank">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="mailto:jhowrk@gmail.com" target="_blank">
+                        <i data-feather="mail"></i>
+                    </a>
+                </div>
+                <br>
+                <a href="#" id="contact-hide" class="btn-hide">Hide</a>
             </div>
-
-        </div>
+        </main>
     </div>
-    </section>
-
-    <section id="my-skills">
-        <h2>Minhas Habilidades</h2>
-        <div class="my-skills">
-            <div class="skill">
-                <iconify-icon icon="icomoon-free:html-five" class="icons"></iconify-icon>
-                <h3>HTML5</h3>
-                <p>Permite que os desenvolvedores desenhem como serão exibidos pelo 
-                    navegador os elementos da página, como texto, hiperlinks e arquivos multimídia.</p>
-            </div>
-            <div class="skill">
-                <iconify-icon icon="ion:logo-css3" class="icons"></iconify-icon>
-                <h3>CSS3</h3>
-                <p>Enquanto o HTML tem como objetivo criar a estrutura principal do documento, 
-                    a função do CSS é justamente otimizar o aspecto visual das páginas, de uma 
-                    maneira mais organizada e menos complexa na hora realizar manutenção.</p>
-            </div>
-            <div class="skill">
-                <iconify-icon icon="akar-icons:javascript-fill" class="icons"></iconify-icon>
-                <h3>JavaScript</h3>
-                <p>Junto do HTML e do CSS, é uma das principais tecnologias da web, permitindo 
-                    a criação de páginas interativas com elementos dinâmicos e boa performance.</p>
-            </div>
-            <div class="skill">
-                <iconify-icon icon="file-icons:adobe-photoshop" class="icons"></iconify-icon>
-                <h3>Photoshop</h3>
-                <p>O Adobe Photoshop é um software de edição de imagens desenvolvido pela 
-                    Adobe Systems. Ele é considerado líder no mercado dos editores de imagem.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        Desenvolvidor por <a href="https://www.linkedin.com/in/jhonatarios/" target="_blank">Jhonata Rios</a>
-    </footer>
-    <a href="#" class="back"></a>
+<script>
+    feather.replace()
+</script>
 </body>
 </html>
