@@ -4,103 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhonata Rios</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/scripts.js" defer></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/js/scripts.js"></script>
+    <title>Jhonata Rios — Front-end Web Developer</title>
 </head>
 <body>
-    <div id="wrapper">
-        <div class="main-box">
-            <div class="rgb-line"></div>
-            <div class="about">
-                <span class="name">Jhonata Rios</span>
-                <p>Front end web developer</p>
-            </div>
+    <!-- Hero start -->
+    <div class="hero">
+        <!-- Navbar start -->
+        <nav class="hidden">
+            <p>Jhonata Rios</p>
             <ul>
-                <li>Focus.</li>
-                <li>Discipline.</li>
-                <li>Consistency.</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
-    
-            <div class="menu">
-                    <div id="home-click">
-                        <a href="#">Home</a>
-                    </div>
-    
-                    <div id="about-click">
-                        <a href="#">About</a>
-                    </div>
-                    
-                    <div id="projects-click">
-                        <a href="#">Projects</a>
-                    </div>
-    
-                    <div id="contact-click">
-                        <a href="#">Contact</a>
-                    </div>
+            <a href="https://github.com/jhonatarios" class="btn" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+        </nav>
+        <!-- Navbar end -->
+        <!-- Hero content start -->
+        <section class="content hidden">
+            <div>
+                <h4>Olá, meu nome é</h4>
+                <h1>Jhonata <span>Rios</span></h1>
+                <p>Eu sou um desenvolvedor web front-end.</p>
+            </div>
+            <div></div>
+        </section>
+        <!-- Hero content end -->
+    </div>
+    <!-- Hero end -->
+    <!-- About section start -->
+    <section class="about" id="about">
+        <div class="main hidden">
+            <img src="/img/me.jpg">
+            <div class="aboutText">
+                <h5>Web Developer <span>& UX&UI Designer</span></h5>
+                <p>Eu tive meu primeiro contato com linhas de código aos 7 anos de idade, infelizmente 
+                    no meio desse caminho, parando e voltando as linhas de código para tentar outras 
+                    ideias, hoje estou focado e determinado em trilhar essa carreira.</p>
+                <button type="button" onClick='window.location="#contact"'><i class="fa-solid fa-envelope"></i> Vamos conversar!</button>
             </div>
         </div>
-        
-        <main id="content">
-            <div id="about-me" class="hide">
-                <p>👨🏻‍💻   Eu tive meu primeiro contato com linhas de código aos 7 anos de idade, já 
-                    desde novo era apaixonado por animes e queria fazer um site de animes. Ao longo 
-                    dos anos fui aprendendo realmente como que era e junto com alguns outros amigos 
-                    fomos responsaveis por fazer o design de varios sites de anime que ficaram famosos 
-                    na epoca, e são conhecidos até hoje por muitos. Infelizmente no meio desse caminho, 
-                    parando e voltando as linhas de codigo para tentar outras oportunidades, hoje estou 
-                    focado e determinado em trilhar essa carreira.</p>
-                <p>💚   Tive experiência como criador de conteúdo durante alguns períodos, também passei 
-                    cerca de 3 anos como engenheiro de áudio, são experiências que agregam muito ao meu 
-                    conhecimento geral, podendo auxiliar em alguns determinados projetos.</p>
-                <p>🚀   Atualmente, tenho como foco principal da minha carreira é desenvolvimento web 
-                    front end. Utilizo JavaScript (React) para desenvolver atualmente.</p>
-                <p>🏎   Sou apaixonado por automobilismo, especialmente por Drift, costumava correr em 
-                    montanhas com amigos no simulador.</p>
-                <p>(◕‿◕)   Como já deu para perceber no inicio, sou bastante apaixonado por anime 
-                    também...</p>
-                    <br> 
-                    <a href="#" id="about-me-hide" class="btn-hide">Hide</a>
+    </section>
+    <!-- About section end -->  
+    <!-- Stack section start-->
+    <section class="stack" id="stack">
+        <h2>Conheça a minha stack</h2>
+        <div class="main hidden">
+            <div class="box">
+                <h3><i class="fa-solid fa-code"></i> Linguagens</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                </ul>
             </div>
-    
-            <div id="projects" class="hide">
-                <div class="container">
-                    <a href="https://jhonatarios.github.io/pokedex/" target="_blank">
-                        <img src="./img/sq_gengar.jpg" alt="Pokedex">
-                    </a>
-
-                    <a href="https://jhonatarios.github.io/lol-login-screen/" target="_blank">
-                        <img src="./img/sq_rengar.png" alt="LoL Login Screen">
-                    </a>
-
-                    <a href="https://jhonatarios.github.io/mariojump/" target="_blank">
-                        <img src="./img/sq_mario.jpg" alt="Mario Jump">
-                    </a>
+            <div class="box">
+                <h3><i class="fa-solid fa-terminal"></i> Frameworks/CMS</h3>
+                <ul>
+                    <li>WordPress</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3><i class="fa-solid fa-window-maximize"></i> Softwares</h3>
+                <ul>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe XD</li>
+                    <li>Ableton Live</li>
+                    <li>VSCode</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Stack section end -->
+    <!-- Projects section start-->
+    <section class="projects" id="projects">
+        <h2>Veja alguns de meus projetos!</h2>
+        <div class="main hidden">
+            <div class="projectsArea">
+                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </div>
-                <br>
-                <a href="#" id="projects-hide" class="btn-hide">Hide</a>
-            </div>
-    
-            <div id="contact" class="hide">
-                <div class="container">
-                    <a href="https://github.com/jhonatarios" target="_blank">
-                        <i data-feather="github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jhonatarios/" target="_blank">
-                        <i data-feather="linkedin"></i>
-                    </a>
-                    <a href="mailto:jhowrk@gmail.com" target="_blank">
-                        <i data-feather="mail"></i>
-                    </a>
+                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </div>
-                <br>
-                <a href="#" id="contact-hide" class="btn-hide">Hide</a>
+                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
             </div>
-        </main>
-    </div>
-<script>
-    feather.replace()
-</script>
+        </div>
+    </section>
+    <!-- Projects section end -->
+    <!-- Contact me section start-->
+    <section class="contactMe" id="contact">
+        <h2>Entre em contato comigo!</h2>
+        <div class="main hidden">
+            aa
+        </div>
+    </section>
+    <!-- Contact me  section end -->
+    <!-- Footer start -->
+    <footer>
+        <p>Oi</p>
+    </footer>
+    <!-- Footer end -->
+    <a href="#" class="back"></a>
 </body>
 </html>
