@@ -13,3 +13,11 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Anti spam (form)
+
+document.querySelector("#formu").addEventListener("submit", function(e){
+    if(document.getElementById('spam').value.length !== 0){
+        e.preventDefault();
+    }
+});
