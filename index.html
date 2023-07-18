@@ -2,188 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/js/scripts.js"></script>
-    <title>Jhonata Rios — Front-end Web Developer</title>
+    <title>Jhonata Viana Rios</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <!-- Hero start -->
-    <div class="hero hidden">
-        <!-- Navbar start -->
-        <nav class="nav" id="nav">
-            <p>Jhonata Rios</p>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#stack">Stack</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+    <div class="main">
+        <div class="top">
+            <p>Hi, I'm Jhonata</p>
+        </div>
+        <div class="mid">
+            <h1>FRONTEND</h1>
+            <h1>DEVELOPER</h1>
+            <div class="social">
+                <a href="https://github.com/jhonatarios" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
                 </a>
-            </ul>
-            <a href="#" class="btn">
-                <i class="fa-solid fa-blog"></i>
-                Blog
-            </a>
-        </nav>
-        <!-- Navbar end -->
-        <!-- Hero content start -->
-        <section class="content">
-            <div>
-                <h4>Olá, meu nome é</h4>
-                <h1>Jhonata <span>Rios</span></h1>
-                <p>Eu sou um desenvolvedor web front-end.</p>
+                <a href="https://www.linkedin.com/in/jhonatarios/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
             </div>
-            <div></div>
-        </section>
-        <!-- Hero content end -->
+        </div>
+        <div class="bottom">
+            <p>I'm 23 years old, currently studying Software Engineering. 
+                I'm a front-end developer looking for my first opportunity.</p>
+        </div>
     </div>
-    <!-- Hero end -->
-    <!-- About section start -->
-    <section class="about hidden" id="about">
-        <div class="main">
-            <img src="/img/me.jpg">
-            <div class="aboutText">
-                <h5>Web Developer <span>& UX&UI Designer</span></h5>
-                <p>Eu tive meu primeiro contato com linhas de código aos 7 anos de idade, infelizmente 
-                    no meio desse caminho, parando e voltando as linhas de código para tentar outras 
-                    ideias, hoje estou focado e determinado em trilhar essa carreira.</p>
-                <button type="button" onClick='window.location="#contact"'><i class="fa-solid fa-envelope"></i> Vamos conversar!</button>
-            </div>
-        </div>
-    </section>
-    <!-- About section end -->  
-    <!-- Stack section start-->
-    <section class="stack hidden" id="stack">
-        <h2>Conheça a minha stack</h2>
-        <div class="main">
-            <div class="box">
-                <h3><i class="fa-solid fa-code"></i> Linguagens</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                </ul>
-            </div>
-            <div class="box">
-                <h3><i class="fa-solid fa-terminal"></i> Frameworks/CMS</h3>
-                <ul>
-                    <li>WordPress</li>
-                    <li>React</li>
-                </ul>
-            </div>
-            <div class="box">
-                <h3><i class="fa-solid fa-window-maximize"></i> Softwares</h3>
-                <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe XD</li>
-                    <li>Ableton Live</li>
-                    <li>VSCode</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- Stack section end -->
-    <!-- Projects section start-->
-    <section class="projects hidden" id="projects">
-        <h2>Veja alguns de meus projetos!</h2>
-        <div class="main">
-            <div class="projectsArea">
-                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
-                    <h3>Mario Jump</h3>
-                    <p>Projeto de jogo estilo Flappy Bird.</p>
-                    <em>Linguagens utilizadas:</em>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <div class="bottom">
-                        <a href="https://github.com/jhonatarios/mariojump" target="_blank">Repositorio no GitHub</a>
-                        <a href="https://jhonatarios.github.io/mariojump/" target="_blank">Visualizar o projeto</a>
-                    </div>
-                </div>
-                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
-                    <h3>LOL Login Screen</h3>
-                    <p>Tela de login responsiva do client do League of Legends.</p>
-                    <em>Linguagens utilizadas:</em>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                    </ul>
-                    <div class="bottom">
-                        <a href="https://github.com/jhonatarios/lol-login-screen" target="_blank">Repositorio no GitHub</a><br>
-                        <a href="https://jhonatarios.github.io/lol-login-screen/" target="_blank">Visualizar o projeto</a>
-                    </div>
-                </div>
-                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
-                    <h3>Pokédex</h3>
-                    <p>Listagem de uma Pokédex pelo ID ou nome do pokémon.</p>
-                    <em>Linguagens utilizadas:</em>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <div class="bottom">
-                        <a href="https://github.com/jhonatarios/pokedex" target="_blank">Repositorio no GitHub</a><br>
-                        <a href="https://jhonatarios.github.io/pokedex/" target="_blank">Visualizar o projeto</a>
-                    </div>
-                </div>
-                <div style="background: url('/img/stack.jpg'); background-size: cover; background-position: center;">
-                    <h3>Richard Wollyce</h3>
-                    <p>Hotsite para divulgação de novos lançamentos.</p>
-                    <em>Linguagens utilizadas:</em>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <div class="bottom">
-                        <a href="#" target="_blank">Repositorio no GitHub</a><br>
-                        <a href="http://richardwollyce.com" target="_blank">Visualizar o projeto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Projects section end -->
-    <!-- Contact me section start-->
-    <section class="contactMe hidden" id="contact">
-        <h2>Entre em contato comigo!</h2>
-        <div class="main">
-            <div class="contactForm">
-                <form id="form" action="https://formsubmit.co/526961ca3ee44302004c832e89404a2c" method="POST">
-                    <input type="text" name="name" placeholder="Nome" required>
-                    <input type="text" name="email" placeholder="E-mail" required>
-                    <input type="text" name="_subject" placeholder="Assunto" required>
-                    <input type="text" name="message" placeholder="Mensagem" required></textarea>
-                    <button type="submit">Enviar uma mensagem</button>
-                    <input type="hidden" name="_next" value="https://jhonatarios.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="spam" id="spam">
-                </form>
-            </div>
-            <div class="socialMedia">
-                <p>Entre em contato também por:</p>
-                <a href="https://github.com/jhonatarios" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.behance.net/jhonatarios" target="_blank"><i class="fa-brands fa-behance"></i></a>
-                <a href="https://www.linkedin.com/in/jhonatarios/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:jhowrk@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </div>
-        <!-- Footer start -->
-        <footer>
-                <p>	&#169; 2022 Jhonata Rios. Todos direitos reservados.</p>
-        </footer>
-        <!-- Footer end -->
-    </section>
-    <a href="#" class="back"></a>
 </body>
 </html>
